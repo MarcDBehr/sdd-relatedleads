@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="RelatedLeadsController" access="global" >
+	
+    <aura:attribute name="recordId" type="String" default="" access="global" />
+    <aura:attribute name="leadList" type="Lead[]" default="" access="global" />
+    
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" access="global" />
+
+    <lightning:card title="Possible Related Leads" iconName="standard:lead">
+  
+        <aura:if isTrue="{!v.leadList.length > 0}">
+            <aura:iteration items="{!v.leadList}" var="lead">
+                <c:RelatedLeadRecord leadObj="{!lead}" />    
+            </aura:iteration>
+            <aura:set attribute="else">
+                <div class="slds-box slds-box_xx-small slds-m-top_x-small slds-m-bottom_x-small slds-m-left_small slds-m-right_small">            
+                	This account has no related leads
+                </div>
+                
+            </aura:set>
+        </aura:if>
+        
+     </lightning:card>
+   
+</aura:component>

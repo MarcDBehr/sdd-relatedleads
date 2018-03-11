@@ -1,0 +1,25 @@
+<aura:documentation>
+	<aura:description>
+        <p>
+            Simply drag this component onto the Account record page. It looks at the added custom field
+            "Email Domain" for a value and uses that to look for leads that have the same email domain.
+            At this time, LEX doesn't allow developers to invoke the conversion process manually, therefore 
+            simply click View and walk through the conversion process as normal.
+        </p>
+        
+        <p>
+            Tech Notes:
+            <ol>
+                <li>
+                    When placing this component on the page, make it conditional on the Email Domain being populated 
+                    otherwise you'll just have an empty list (which is fine as well).
+                </li>
+            	<li>
+                    This component uses a child component to render each lead record, that component is called 
+                    RelatedLeadRecord.
+                </li>
+            </ol>
+        </p>
+    </aura:description>
+    
+</aura:documentation>

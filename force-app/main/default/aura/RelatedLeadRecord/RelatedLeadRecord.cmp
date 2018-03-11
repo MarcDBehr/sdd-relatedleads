@@ -1,0 +1,13 @@
+<aura:component access="global">
+    
+    <aura:attribute name="leadObj" type="Lead" default="" access="global" />
+
+    <div class="slds-box slds-box_xx-small slds-m-top_x-small slds-m-bottom_x-small slds-m-left_small slds-m-right_small">            
+        <lightning:formattedName aura:id="myname"
+            firstName="{!v.leadObj.FirstName}"
+            lastName="{!v.leadObj.LastName}" /><br/>
+        <lightning:formattedEmail value="{!v.leadObj.Email}"/><br/>
+        <a href="{!'/' + v.leadObj.Id}">View</a>
+    </div>
+
+</aura:component>

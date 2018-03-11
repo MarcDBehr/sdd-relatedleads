@@ -1,0 +1,13 @@
+<aura:documentation>
+	<aura:description>
+        <p>
+            This component simply styles a lead record for use in the RelatedLeads component. It only 
+            takes one argument: "leadObj" which is the instance of the lead it will be rendering.
+        </p>
+    </aura:description>
+	<aura:example name="RelatedLeadRecord" ref="RelatedLeadRecord" label="Related Lead Record">
+        <code>
+            &lt;SDD:RelatedLeadRecord leadObj="{!myLeadRecord}" /&gt;
+        </code>
+	</aura:example>
+</aura:documentation>

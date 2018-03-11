@@ -1,0 +1,6 @@
+.forceignore
+.sfdx/
+.vscode/
+mdapipkg/
+config/
+sfdx-project.json
