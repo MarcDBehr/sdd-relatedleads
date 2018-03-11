@@ -17,6 +17,6 @@ Click the View link to view the Lead record and form there, work with the Lead a
 
 
 To Install:
-This project uses Salesforce DX, so clone this project and deploy to your orgs via salesforce dx. In addition, we have an unmanaged package you can install from as well. 
+This project uses Salesforce DX, so clone this project and deploy to your orgs via salesforce dx. In addition, we have an unmanaged package you can install from as well here:  https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1N000002Cyev
 
 This code is free for you to install, use, and modify -- however you may NOT include this in any packages that will be sold or offered in the appexchange. It is handed over as-is and with no warantee, guarantee, or black tea with a twist of lemon.
