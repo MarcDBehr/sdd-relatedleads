@@ -4,6 +4,8 @@
     <aura:attribute name="leadList" type="Lead[]" default="" access="global" />
     
     <aura:handler name="init" action="{!c.doInit}" value="{!this}" access="global" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+
 
     <lightning:card title="Possible Related Leads" iconName="standard:lead">
   
