@@ -37,6 +37,8 @@ public class RelatedLeadsController {
                     }
                     currentIteration++;    
                 }
+
+                leadQuery += ' AND isConverted = false';
                 
                 leadList = Database.query(leadQuery); 
             }       
