@@ -23,7 +23,7 @@ public class RelatedLeadsController {
             	List<String> domains = acc.Email_Domain__c.split(';');  
                 
                 //build the base query, we will loop over possible domains and an an OR for each
-                String leadQuery = 'SELECT Id, FirstName, LastName, Email FROM Lead WHERE Email LIKE ';
+                String leadQuery = 'SELECT Id, FirstName, LastName, Email FROM Lead WHERE isConverted = false AND (Email LIKE ';
                 
                 Integer currentIteration = 0;
                 for(String domain : domains) {
@@ -38,7 +38,7 @@ public class RelatedLeadsController {
                     currentIteration++;    
                 }
 
-                leadQuery += ' AND isConverted = false';
+                leadQuery += ')';
                 
                 leadList = Database.query(leadQuery); 
             }       
